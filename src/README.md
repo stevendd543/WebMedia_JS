@@ -14,6 +14,6 @@ When the media stream ends, any media data not already delivered to your ondataa
 步驟 2、當停止錄製的時候，所有的由 dataAvailable 事件捕捉的影音串流資料，會被放入單一個 blob 中
 When MediaRecorder.stop() is called, all media data which has been captured since recording began or the last time a dataavailable event occurred is delivered in a Blob; after this, capturing ends.
 
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-The Blob containing the media data is available in the dataavailable event's data property. 影音資料被放在 data 中
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: <br>
+The Blob containing the media data is available in the dataavailable event's data property. 影音資料被放在 data 中<br>
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
