@@ -1,4 +1,3 @@
-import { ReactMediaRecorder } from "react-media-recorder";
 import React,{useEffect,useRef}from "react";
 import Webcam from "react-webcam";
 class App extends React.Component{
@@ -48,7 +47,7 @@ const A = () => {
     mediaRecorderRef.current.stop();
     setCapturing(false);
   }, [mediaRecorderRef, webcamRef, setCapturing]);
-
+  console.log(recordedChunks);
   const handleDownload = React.useCallback(() => {
     if (recordedChunks.length) {
       //將影片串流recordedChunks以blob形式儲存在瀏覽器中並設定mime type
@@ -63,6 +62,7 @@ const A = () => {
       a.href = url;
       a.download = "react-webcam-stream-capture.webm";
       a.click();
+      
       //下載完要手動清除內存，否則會影響效能
       window.URL.revokeObjectURL(url);
       setRecordedChunks([]);

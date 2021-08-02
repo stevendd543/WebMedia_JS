@@ -19,3 +19,7 @@ When MediaRecorder.stop() is called, all media data which has been captured sinc
 The Blob containing the media data is available in the <br>
 dataavailable event's data property. 影音資料被放在 data 中<br>
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+### what is blob?
+
+Blob 是 Binary Large Object 的縮寫，表示的是二進位檔案的資料內容，透過 Blob，JavaScript 才能讀寫二進位資料的檔案。和 ArrayBuffer 不同的地方是，ArrayBuffer 是操作記憶體，而 Blob 是用來操作二進位檔案（但尚未參照到實體檔案上）。
